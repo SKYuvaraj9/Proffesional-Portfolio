@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26,36,42);
+
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:50px     ;
+    justify-content: center;
+    color: beige;
+}
+.proff{
+ display: flex;
+ flex-direction: column;   
+ 
+ 
+}
+.skill{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    column-gap: 10px;
+    
+}
+.bar{
+    border: solid;
+    width: 500px;
+    height: 10px  ;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(9, 14, 14);
+    border-radius: 25px;
+position: relative;
+    
+}
+.bar span{
+    width: 80%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+
+
+
+.tech{
+    display: flex;
+    flex-direction: column        ;
+    
+    
+}
+.tskill{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    column-gap: 10px;
+    
+ 
+
+}
+.tbar{
+    border: solid;
+    width: 500px;
+    height: 10px  ;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(9, 14, 14);
+    border-radius: 25px;
+position: relative;
+
+    
+}
+.python{
+    width: 80%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+.java{
+    width: 70%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+.html{
+    width: 75%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+.css{
+    width: 60%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+.ms{
+    width: 80%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+.contain{
+    width: 500px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+
+}
+.left{
+height: 300px;
+width: 400px;
+background: white;
+position: relative;
+
+}
+.right{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    background-color: blue;
+    tra
+    
+}
