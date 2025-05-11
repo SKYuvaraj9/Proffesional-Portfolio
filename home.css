@@ -3,14 +3,19 @@
   font-family: Arial, Helvetica, sans-serif;
 
 }
+hr{
+  width: 100%;
+
+}
 body{
 font-size: medium;
 height: max-content;
+overflow-x: hidden;
 width: 100%;
 }
 
 .headlink{
-    padding-right: 20px;
+  
     font-weight: bolder;
     font-size: larger;
     display: flex;
@@ -532,7 +537,7 @@ color: cyan;
 .container{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap:50px     ;
     
@@ -556,9 +561,9 @@ color: cyan;
     
     
 }
-.bar{
+.bar ,.bar1{
     border: solid;
-    width: 500px;
+    width: 450px;
     height: 10px  ;
     display: flex;
     flex-direction: row;
@@ -578,7 +583,18 @@ color: cyan;
     border-radius: 25px;
 
 }
-.bar span,.python,.java,.css,.ms,.html{
+.bar1 span{
+  width: 75%;
+  height: 100%;
+  
+  left:0;
+  background-color: aqua;
+  color: aqua;
+  box-shadow: 1px 1px 20px;
+  border-radius: 25px;
+
+}
+.bar span ,.bar1 span,.python,.java,.css,.ms,.html,.js,.django {
     animation-name: slide;
     animation-duration: 5s;
     animation-timing-function:ease;
@@ -622,7 +638,7 @@ color: cyan;
 }
 .tskill{
     display: flex;
-    justify-content: end;
+    
     align-items: center;
     padding: 10px;
     column-gap: 10px;
@@ -630,9 +646,10 @@ color: cyan;
  
 
 }
+
 .tbar{
     border: solid;
-    width: 500px;
+    width: 450px;
     height: 10px  ;
     display: flex;
     flex-direction: row;
@@ -641,9 +658,14 @@ color: cyan;
     
     
 }
+.skill p,.tskill p{
+  width: 100px;
+  display: flex;
+  justify-content:center ;
+}
 
 .python{
-    width: 80%;
+    width: 85%;
     height: 100%;
     
     left:0;
@@ -654,7 +676,7 @@ color: cyan;
     
 }
 .java{
-    width: 70%;
+    width: 60%;
     height: 100%;
     
     left:0;
@@ -664,7 +686,7 @@ color: cyan;
     box-shadow: 1px 1px 20px;
 }
 .html{
-    width: 75%;
+    width: 90%;
     height: 100%;
     
     left:0;
@@ -674,7 +696,7 @@ color: cyan;
     box-shadow: 1px 1px 20px;
 }
 .css{
-    width: 60%;
+    width: 75%;
     height: 100%;
     
     left:0;
@@ -692,6 +714,16 @@ color: cyan;
     border-radius: 25px;
     color: aqua;
     box-shadow: 1px 1px 20px;
+}
+.django ,.js{
+  width: 65%;
+  height: 100%;
+  
+  left:0;
+  background-color: aqua;
+  border-radius: 25px;
+  color: aqua;
+  box-shadow: 1px 1px 20px;
 }
 .container h1 span{
     color: aqua;
@@ -938,6 +970,9 @@ color: rgb(122, 123, 121);
    
    margin-top: 20px;
 
+}
+.edu1{
+  text-align: justify;
 }
 .edu a{
     border-radius: 30px;
@@ -1297,6 +1332,7 @@ height: 50px;
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
+    text-align: justify;
     animation: fadeIn 1s ease-in-out;
   }
   
@@ -1404,10 +1440,34 @@ height: 50px;
   
  
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     .project-card {
       width: calc(80% - 40px);
+      
     }
+    body{
+      overflow-x: hidden;
+    }
+    #popup {
+      position: fixed;
+     
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #252222;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      z-index: 10;
+    }
+   .resume{
+    width: 90%;
+   }
+   .resume img{
+    width: 50%;
+    height: 50%;
+   }
   }
   
   
@@ -1458,19 +1518,20 @@ height: 50px;
   width: 200px;}
 
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
 
     
     .header{
-      background: rgb(53, 245, 245);
+      background: cyan;
       position: fixed;
-     
-     
+      
+      display: flex;
+      justify-content: space-around;
       top: 0;
       left:0;
       color: rgb(0, 0, 0);
       width:100%;
-      height: 50px;
+      height: 70px;
       
       z-index: 2  ;
       
@@ -1478,11 +1539,14 @@ height: 50px;
   }
   .header h1{
     font-size: 20px;
+    width: 100px;
 
   }
   .headlink{
-    font-size: medium;
+    font-size: large;
     translate: 0;
+   
+    
     
     
   }
@@ -1513,11 +1577,13 @@ height: 50px;
       align-items: center;
     }
     .bio{
-      width: 100%;
+      width: 90%;
      align-items: center;
      
     }
-    
+    .bio p{
+      width: 90%;
+    }
    
    
     .logo{
@@ -1556,10 +1622,20 @@ height: 50px;
       flex-direction: column;
     }
    .container{
-
-    display: flex;
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
     flex-direction: column-reverse;
+    
   }
+  .qc{
+    
+    padding-right: 20px;
+  }
+  
+ 
+  
+}
   .skill,.tskill{
     display: flex;
     justify-content: center;
@@ -1572,15 +1648,15 @@ height: 50px;
     justify-content: center;
   }
  .personal{
-  display: flex;
-  width: 100% ;
-  padding-left: 5%;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+   margin-top: 5%;
   
- }
+   }
 
 
   
-}
+
 .animated-text-container {
   font-size: 24px;
   font-weight: bold;
@@ -1601,174 +1677,6 @@ height: 50px;
 
 
 
-
-
-
-
-.slides-container {
-
-  width: 100%;
-  height: max-content;
-  border: solid white;
-  border-radius: 30px;
- 
-}
-
-
-.slide {
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background-size: cover;
-  background-position: center;
-  
-  
-}
-
-.slide-1 {
-  
-  height: max-content;
-  width: 100%;
-  border: solid white;
-  border-radius: 30px;
-
-  background: transparent;
-  
-}
-.acheives1{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  width: 100%;
-  padding-left: 5%;
-}
-.acheives1 img{
-  height: 80%;
-  width: 80%;
- 
-  transition-duration: 0.5s;
- transition-timing-function: ease-out;
-
-}
-.slide-2 {
-  background: transparent;
-  border: solid white;
-  border-radius: 30px;
-  width: 100%;
-  
-  height: max-content;
-  
-}
-.horicert{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  width: 100%;
-  margin-top: 1%;
-}
-.marksheet1{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-  
-}
-.marksheet1 img {
-  height: 70%;
-  width: 70%;
-  margin-left: 10%;
-  
- 
- transition-duration: 0.5s;
- transition-timing-function: ease-in-out;
-}
-.marksheet1 img:hover ,.acheives1 img:hover,.horicert img:hover{
-  transform: scale(1.1);
-
-}
-.horicert img{
-  height: 70%;
-  width: 70%;
-  padding: 50px;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
- }
-.slide.active {
-  display: block;
-}
-
-.slide h1 {
-  font-size: 48px;
-  
-  text-align: center;
-}
-
-.slide p {
-  font-size: 18px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-
-
-
-
-
-.tog{
-  height: 100px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  
-}
-.tog a{
-  background:linear-gradient(45deg,cyan,cyan,white);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 50px;
-  width: 200px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-weight: bold;
-  font-size: medium;
-  transition-duration: 0.5s;
-  transform-origin: 0%;
-  transition-timing-function: ease-in;
-  box-shadow: 1px 1px 10px cyan;
-  
-  
-}
-
-.tog a:hover {
-  background: #ffffff;
-  color:rgb(0, 0, 0);
-  border: solid 2px white;
-  box-shadow: 0px 1px 10px white;
-}
-
-
-.certification h1{
-  color: #ddd;
-
-}
-.certification h1 span{
-  -webkit-text-stroke: 1px white;
-  color: transparent;
-  font-family: cursive;
-}
-
-.personal{
-  display: flex;
-  justify-content: space-around;
-
-  margin-top: 5%;
-}
 .connect{
   color: white;
 }
@@ -1785,3 +1693,77 @@ height: 50px;
   color: white;
   font-weight: bolder;
 }
+
+
+.gallery {
+  max-width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.page img {
+  width: calc(33.33% - 50px);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  transition-duration: 0.5s;
+}
+.page img:hover{
+  transform:scale(1.05)
+}
+
+.page .toggle-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  background:linear-gradient(45deg,cyan,cyan,white);
+  color: #000000;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px cyan;
+
+transition-duration: 1s;
+transition-timing-function: ease-out;
+
+}
+
+.page .toggle-button:hover {
+  background: #ffffff;
+  box-shadow: 1px 1px 10px cyan;
+}
+
+@media only screen and (max-width: 768px) {
+  .page img {
+      width: 90%;
+      margin: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

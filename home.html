@@ -11,9 +11,10 @@
 </head>
 <body >
     
-    <div class="header" > 
+    <div class="header"  > 
+      <div class="nam">
         <h1 style="padding-left: 20px;"><span>Y</span>uva's <span>P</span>ortfolio</h1>
-        <nav class="headlink">
+      </div><nav class="headlink">
             <a href=#h><span>H</span>ome</a>
             <a href=#ab><span>A</span>bout</a>
             
@@ -34,7 +35,7 @@
          
         <h1 id="text-container">I'm a <span id="animated-text"></span></h1>
 
-        <p style="font-size: larger;font-family: Arial, Helvetica, sans-serif;">Explore my portfolio, where you'll find a showcase of my best work in Python, Django, and web development, demonstrating my creativity, technical expertise, and passion for innovative problem-solving, with a focus on delivering high-quality solutions and exceptional user experiences.
+        <p style="font-size: larger;font-family: Arial, Helvetica, sans-serif ;text-align: justify;">Explore my portfolio, where you'll find a showcase of my best work in Python, Django, and web development, demonstrating my creativity, technical expertise, and passion for innovative problem-solving, with a focus on delivering high-quality solutions and exceptional user experiences.
         </p>
         
         </div>
@@ -199,21 +200,27 @@
                 <div class="skill">
                     <p>Communication</p>
                     <div class="bar"><span ></span></div>
-                    <p>80%</p>
+                    <p>70%</p>
 
                 </div>
                 <div class="skill">
                     <p>Analytics</p>
                     <div class="bar"><span ></span></div>
-                    <p>80%</p>
+                    <p>70%</p>
 
                 </div>
                 <div class="skill">
                     <p>leadership</p>
                     <div class="bar"><span ></span></div>
-                    <p>80%</p>
+                    <p>70%</p>
 
                 </div>
+                <div class="skill">
+                  <p>Creativity</p>
+                  <div class="bar1"><span ></span></div>
+                  <p>75%</p>
+
+              </div>
         </div>
 
         
@@ -223,28 +230,39 @@
                 <div class="tskill">
                     <p>Python</p>
                     <div class="tbar"><span class="python"></span></div>
-                    <p>80%</p>
+                    <p>85%</p>
 
                 </div>
 
                 <div class="tskill">
                     <p>Java</p>
                     <div class="tbar"><span class="java"></span></div>
-                    <p>70%</p>
+                    <p>60%</p>
 
                 </div>
                 <div class="tskill">
                     <p>HTML</p>
                     <div class="tbar"><span class="html"></span></div>
-                    <p>75%</p>
+                    <p>90%</p>
 
                 </div>
                 <div class="tskill">
                     <p>CSS</p>
                     <div class="tbar"><span class="css"></span></div>
-                    <p>60%</p>
+                    <p>75%</p>
 
                 </div>
+                <div class="tskill">
+                  <p>Java Script</p>
+                  <div class="tbar"><span class="js"></span></div>
+                  <p>65%</p>
+
+              </div><div class="tskill">
+                <p>Django</p>
+                <div class="tbar"><span class="django"></span></div>
+                <p>65%</p>
+
+            </div>
                 <div class="tskill">
                     <p>MS office</p>
                     <div class="tbar"><span class="ms"></span></div>
@@ -310,7 +328,7 @@
             <img src="pic/stud.png" alt="Project 3 Image">
           </div>
           <div class="project-info">
-            <h2 class="project-title">Student Login System</h2>
+            <h2 class="project-title">Online Attendance System</h2>
             <p class="project-description"><li>Store and manage student data, including name, roll number, and contact details.
             </li>
         <li>Generate attendance reports for individual students, classes, or teachers.</li></p>
@@ -381,47 +399,32 @@
 <center><u><h1 style="color: aliceblue;font-size: 80px;"><span style="color: aqua;">My</span> Certificates</center></u>
 </h1>
   
-
-<div class="certification">
-  <div class="slides-container">
-    <div class="slide slide-1 active">
-      <h1><span>A</span>cheivements</h1>
-      <div class="acheives1">
-        <img src="pic/int1.jpg" alt="">
-        <img src="pic/int2.jpg" alt="">
-        <img src="pic/int3.jpg" alt="">
-        <img src="pic/int4.jpg" alt="">
-        <img src="pic/int8.jpg" alt="">
-        <img src="pic/int9.jpg" alt="">
-        
-    </div>
-    <div class="horicert">
-        <img src="pic/int7.jpg" alt="">
-        <img src="pic/int13.jpg" alt=""></div>
-<div class="tog"><a href="#cer" class="toggle-button">Show MarkSheet</a>
-</div>
-      </div>
-    <div class="slide slide-2">
-      <h1><span>M</span>ark <span>S</span>heet</h1>
-      <div class="marksheet1">
-            
-        <img src="pic/int6.jpg" alt="">
-        <img src="pic/int10.jpg" alt="">
-        <img src="pic/int11.jpg" alt="">
-        <img src="pic/int5.jpg" alt="">
-        <img src="pic/int12.jpg" alt="">
-        <img src="pic/int15.jpg" alt="">
-        <img src="pic/int14.jpg" alt="">
-
-    </div>
-   <div class="tog"><a href="#cer" class="toggle-button">Show 
-    Achievements
-   </a>
-   </div>
-         </div>
+<div class="gallery">
+  <div class="page active" id="page1">
+       
+      <img src="pic/int1.jpg" alt="Image 1">
+      <img src="pic/int2.jpg" alt="Image 2">
+      <img src="pic/int3.jpg" alt="Image 3">
+      <img src="pic/int4.jpg" alt="Image 4">
+      <img src="pic/int8.jpg" alt="Image 5">
+      <img src="pic/int9.jpg" alt="Image 6">
+      <img src="pic/int7.jpg" alt="Image 7">
+      <img src="pic/int13.jpg" alt="Image 8">
+      <a href="#cer"  class="toggle-button" onclick="togglePage()">Show Marksheet</a
+        >
   </div>
-  
- 
+  <div class="page" id="page2">
+    
+      <img src="pic/int6.jpg" alt="Image 1">
+      <img src="pic/int10.jpg" alt="Image 2">
+      <img src="pic/int11.jpg" alt="Image 3">
+      <img src="pic/int5.jpg" alt="Image 4">
+      <img src="pic/int12.jpg" alt="Image 5">
+      <img src="pic/int15.jpg" alt="Image 6">
+      <img src="pic/int14.jpg" alt="Image 7">
+      <a href="#cer" class="toggle-button" onclick="togglePage()">Show Acheivements</a
+        >
+  </div>
 </div>
   
 
@@ -477,6 +480,7 @@
     </nav>
   </div>
 </div>
+
 <script src="home.js"></script>
 </body>
 

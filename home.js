@@ -152,3 +152,20 @@ toggleButtons.forEach((button, index) => {
     }
   });
 });
+
+var currentPage = 1;
+
+function togglePage() {
+    var page1 = document.getElementById('page1');
+    var page2 = document.getElementById('page2');
+
+    if (currentPage === 1) {
+        page1.classList.remove('active');
+        page2.classList.add('active');
+        currentPage = 2;
+    } else {
+        page2.classList.remove('active');
+        page1.classList.add('active');
+        currentPage = 1;
+    }
+}
