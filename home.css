@@ -360,7 +360,7 @@ width: max-content;
      align-items: center;
      display: flex;
      font-weight: bolder;
-     margin-left: 500px;
+     
      cursor: pointer;
      color:black;
      
@@ -480,10 +480,12 @@ display: none;
 .about{
     display: flex;
     margin-top: 100px;
-    align-items: center;
+  
     
     
+
 }
+
 .ali{
     display: flex;
     
@@ -518,7 +520,7 @@ display: none;
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-    margin-right: 50px;
+    margin-right: 5%;
 }
 .headlink span{
 font-family:cursive; 
@@ -964,7 +966,7 @@ color: rgb(122, 123, 121);
 }
 
 
-.edu{
+.edu {
     
     height: 50px;
     width: 200px;
@@ -982,6 +984,7 @@ padding: 10px 20px 10px 20px;
 box-shadow: 1px 1px 10px cyan;
 height: 50px;
    width: 200px;
+   
    text-decoration: none;
     background: transparent;
     border: solid 2px ;
@@ -993,7 +996,7 @@ height: 50px;
     color: cyan;
    
    transition: background-color 0.5s ease-in-out,color 0.2s ease-out;
-    
+  
 }
 .edu a:hover{
     box-shadow: 1px 1px 20px cyan;
@@ -1441,7 +1444,10 @@ height: 50px;
       width: calc(80% - 40px);
       
     }
-    
+    .edu{
+      padding-top: 4%;
+      padding-left: 1%;
+    }
     #popup {
       position: fixed;
      
@@ -1461,6 +1467,9 @@ height: 50px;
    .resume img{
     width: 50%;
     height: 50%;
+   }
+   .divide{
+    display: block;
    }
   }
   
@@ -1522,6 +1531,7 @@ height: 50px;
       display: flex;
       justify-content: space-around;
       top: 0;
+
       left:0;
       color: rgb(0, 0, 0);
       width:100%;
@@ -1532,18 +1542,19 @@ height: 50px;
      
   }
   .header h1{
-    font-size: 20px;
+    font-size: medium;
     width: 100px;
 
   }
   .headlink{
-    font-size: large;
+    font-size:small;
     translate: 0;
-   
+  
     
     
     
   }
+
  
  
   
@@ -1564,6 +1575,10 @@ height: 50px;
       width: 350px;
     }
 
+.divide{
+  display: block;
+  overflow: hidden;
+}
     .des{
       margin-bottom: 150px;
       display: flex;
@@ -1587,6 +1602,10 @@ height: 50px;
       align-items: center;
       width: 100%;
       }
+      .insta,.fb,.em,.wh{
+        padding: 1%
+
+      }
     
       .about img{
         z-index: -5;
@@ -1598,22 +1617,38 @@ height: 50px;
       }
     .moreabout{
   
-      width: 100%;
+    display: flex;
+  
+    width: 100%;
+
+   
+    justify-content: center;
+    align-items: center;
     }
+   
     .ablab{
       display: flex;
-      width: 80%;
+      width: 90%;
+      padding: 2%;
       justify-content:start;
-      gap: 10%;
+      gap: 15%;
+     
      
     }
+    .resbut{
+      overflow: hidden;
+    }
+  
     .ablab label{
-      width: 50%;
+      width: 45%;
       
     }
     .about{
-      display: flex;
+      display: grid;
       flex-direction: column;
+    
+    
+      
     }
    .container{
     width: 100%;
@@ -1623,7 +1658,7 @@ height: 50px;
     
   }
   .container p{
-    width:30%
+    width:150px;
   }
   
  
@@ -1747,14 +1782,13 @@ transition-timing-function: ease-out;
   body{
     overflow: hidden;
     
-   
+   font-size:medium;
   }
   *{
     overflow-x: hidden;
   }
- 
-}
 
+}
 
 
 
