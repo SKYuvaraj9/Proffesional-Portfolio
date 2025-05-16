@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
 
 
 
-  document.querySelectorAll('nav a').forEach(function(anchor) {
+  document.querySelectorAll('a').forEach(function(anchor) {
     anchor.addEventListener('click', function(event) {
       event.preventDefault();
       let target = document.querySelector(anchor.getAttribute('href'));
@@ -57,6 +57,8 @@ window.addEventListener('load', function() {
     });
   });
 
+
+  
   var popupButton = document.getElementById('popup-button');
   var popup = document.getElementById('popup');
   var closeButton = document.getElementById('close-button');
@@ -169,3 +171,10 @@ function togglePage() {
         currentPage = 1;
     }
 }
+
+
+
+
+
+
+
