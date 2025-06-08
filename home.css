@@ -74,7 +74,7 @@ hr{
       color: #000000df;
       
             position: relative;
-      overflow: hidden;
+     
       padding: 0px 0px 0px 1px;
       
       transition: transform 0.2s ease-in-out;
@@ -158,7 +158,6 @@ body{
     width: 30px;
     
     color: aqua;
-   
       
   
 }
@@ -168,6 +167,7 @@ body{
     width: fit-content;
     border: solid cyan;
     display: flex;
+    
     padding: 9px;
     margin-top: 40px;
     width: fit-content;
@@ -197,6 +197,7 @@ body{
     border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
+
     font-size: larger;
     display: none;
     color: rgb(0, 0, 0);
@@ -1445,10 +1446,25 @@ height: 50px;
   @media only screen and (max-width: 768px) {
    
     
+  .project-card {
+      width: calc(90% - 40px);
+      font-size: small;
+    
+    }
+     .project-card .view-project-button {
+      font-size: small;
+    
+    }
 
     .edu{
-      padding-top: 4%;
-      padding-left: 1%;
+      width: 90%;
+     
+      padding-top: 9%;
+      padding-left: 3%;
+
+    }
+    .edu a{
+    margin-top: 100px;
     }
     #popup {
       position: fixed;
@@ -1550,9 +1566,7 @@ height: 50px;
       row-gap: 10px;
      
   }
-  .nam{
-    overflow: hidden;
-  }
+
   .header h1{
     font-size: medium;
     justify-content: center;
@@ -1572,9 +1586,10 @@ height: 50px;
     
   }
 
+ .edu1 p{
+ width: 85%;
  
- 
-  
+  }
    .biopic{
      display: flex;
      flex-direction:column-reverse;
@@ -1594,13 +1609,17 @@ height: 50px;
 
 .divide{
   display: block;
-  overflow: hidden;
+ 
 }
     .des{
       margin-bottom: 150px;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .des img{
+    width: 80%;
+    height: 300px;
     }
     .bio{
       width: 90%;
@@ -1614,15 +1633,23 @@ height: 50px;
     font-size: large;   }
    
     .logo{
+      width: 99%;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+      justify-content: space-between;
+  
       }
       .insta,.fb,.em,.wh{
-        padding: 1%
+padding: 0 2% 2% 2%;
+display: flex;
+justify-content: center;
+align-items: start;
 
+
+      }
+      .logo a{
+        width: 50%;
+       
       }
     
       .about img{
@@ -1678,6 +1705,9 @@ height: 50px;
     
       
     }
+    *{
+      overflow-x: hidden;
+    }
    .container{
     width: 100%;
     display:grid;
@@ -1685,6 +1715,7 @@ height: 50px;
     flex-direction: column-reverse;
     
   }
+  
   .container p{
     width:150px;
   }
@@ -1815,13 +1846,11 @@ transition-timing-function: ease-out;
       margin: 20px 0;
   }
   body{
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
    font-size: small;
   }
-  *{
-    overflow-x: hidden;
-  }
+ 
   .dis {
 
     width: 100%;
@@ -1829,6 +1858,10 @@ transition-timing-function: ease-out;
     justify-content: center;
     align-items: center;
   
+  }
+  .dis img{
+    width: 80%;
+    height: 60%;
   }
 
 }
@@ -1875,12 +1908,13 @@ transition-timing-function: ease-out;
   margin-left: 25%;
  
  }
+
  .edu2 .innereducation{
   width: 100%;
   font-size: xx-small;
  }
  .milestone ,.milestone1{
-  width: 85%;
+  width: 70%;
   font-size: small;
  }
 
@@ -1901,16 +1935,14 @@ transition-timing-function: ease-out;
       color: rgb(0, 0, 0);
       width:100%;
       height: 100px;
-      overflow: hidden;
+  
     
       
       z-index: 2  ;
       row-gap: 10px;
      
   }
-  .nam{
-    overflow: hidden;
-  }
+
   .header h1{
     font-size: medium;
     justify-content: center;

@@ -48,15 +48,21 @@ window.addEventListener('load', function() {
   });
 
 
+document.querySelectorAll('a').forEach(function(anchor) {
+  anchor.addEventListener('click', function(event) {
+    const href = this.getAttribute('href');
 
-  document.querySelectorAll('a').forEach(function(anchor) {
-    anchor.addEventListener('click', function(event) {
-      event.preventDefault();
-      let target = document.querySelector(anchor.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
-    });
+    // Check if it's an internal link
+    if (href && href.startsWith('#')) {
+      event.preventDefault(); // Only prevent default for internal links
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   });
-
+});
+ 
 
   
   var popupButton = document.getElementById('popup-button');
@@ -171,7 +177,6 @@ function togglePage() {
         currentPage = 1;
     }
 }
-
 
 
 
