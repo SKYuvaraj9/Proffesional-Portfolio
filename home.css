@@ -1975,5 +1975,8 @@ transition-timing-function: ease-out;
       font-size: small;
     
     }
+    .nam{
+      overflow: hidden;
+    }
 
 }
